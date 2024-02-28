@@ -181,7 +181,7 @@ a:hover{
     justify-content: space-between;
 }
 .copyrightsection{
-    background-color: var(--netural-black);
+    /* background-color: var(--netural-black); */
     text-align: center;
 }
 
