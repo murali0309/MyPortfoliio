@@ -108,7 +108,7 @@ a:hover{
 
 .emoji{
 
-    animation: waving_hand 2.5s 2;
+    animation: waving_hand 2.5s infinite;
     transform-origin: 70% 70%;
     display: inline-block;
 }
@@ -159,9 +159,26 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto 20px;
+    margin: 20px auto;
+    overflow: hidden;
 }
 
 .projectimgcontainer{
     width: 100%;
+}
+
+/* foottersection */
+
+#footercontainer{
+    background-color: var(--netural-black);
+    padding: 32px 0;
+    color: white;
+}
+
+.rowsection{
+    display: flex;
+    justify-content: space-between;
+}
+.copyrightsection{
+    text-align: center;
 }
