@@ -186,21 +186,13 @@ a:hover{
 /* general */
 .work{
     max-width: 720px;
+    overflow: hidden;
     margin: auto;
-}
-.project{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 20px;
 }
 
 .projectimgcontainer img{
-    max-height: 90dvh;
-    object-fit: contain;
+    width: 100%;
 }
-
 
 /* foottersection */
 
