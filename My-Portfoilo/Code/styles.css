@@ -19,7 +19,7 @@
 
 html{
     scroll-behavior: smooth;
-    background-image: radial-gradient(rgb(217, 202, 179) 0.5px, rgb(246, 246, 246) 0.5px);
+    background-image: radial-gradient(rgb(217, 202, 179) 1px, rgb(246, 246, 246) 0.5px);
     background-size: 10px 10px;
 }
 
@@ -108,7 +108,7 @@ a:hover{
 
 .emoji{
 
-    animation: waving_hand 2.5s infinite;
+    animation: waving_hand 2.5s 0;
     transform-origin: 70% 70%;
     display: inline-block;
 }
@@ -148,35 +148,59 @@ a:hover{
 
 /* currentProjectstyles */
 
-.projectholder{
+/* .projectholder{
     width: 100%;
 }
 
 .Projectholder img{
     width: 100%;
     object-fit: contain;
+} */
+
+.scrollcontainer{
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 5rem;
+    background-color: #3B3B3B;
+    
+}
+.set1{
+    display: inline-block;
+    animation: 6s slide 0 linear;
+}
+
+.set1 img{
+    height: 300px;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%) ;
+    }
 }
 
 /* ProjectSection */
 /* general */
-.project img{
-    width: 100%;
-    object-fit: contain;
+.work{
+    max-width: 720px;
+    margin: auto;
 }
-
-/* container */
 .project{
-    max-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 20px;
-    overflow: hidden;
+    justify-content: center;
+    margin: 0 20px;
 }
 
-.projectimgcontainer{
-    width: 100%;
+.projectimgcontainer img{
+    max-height: 90dvh;
+    object-fit: contain;
 }
+
 
 /* foottersection */
 
