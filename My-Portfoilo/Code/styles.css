@@ -189,7 +189,9 @@ a:hover{
     overflow: hidden;
     margin: auto;
 }
-
+.projectimgcontainer{
+    margin: 20px 20px;
+}
 .projectimgcontainer img{
     width: 100%;
 }
