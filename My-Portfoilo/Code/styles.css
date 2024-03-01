@@ -198,22 +198,36 @@ a:hover{
 
 /* foottersection */
 
+
+
 #footercontainer{
     background-color: var(--netural-black);
-    padding: 32px 0;
     color: white;
 }
-
 .rowsection{
-    background-color: var(--netural-black);
     display: flex;
     justify-content: space-between;
 }
-.copyrightsection{
-    /* background-color: var(--netural-black); */
-    text-align: center;
+
+.footeraboutme div{
+    display: flex;
+    align-items: center;
+
 }
 
-.sideboder{
-    border-right: 1px solid whitesmoke;
+.location{
+    font-size: 8px;
+}
+
+.iconsContainer img{
+    height: 38px;
+}
+.copyrightsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: 300;
+    gap: 4px;
 }
