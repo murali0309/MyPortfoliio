@@ -108,7 +108,7 @@ a:hover{
 
 .emoji{
 
-    animation: waving_hand 2.5s 0;
+    animation: waving_hand 2.5s infinite;
     transform-origin: 70% 70%;
     display: inline-block;
 }
@@ -166,7 +166,7 @@ a:hover{
 }
 .set1{
     display: inline-block;
-    animation: 6s slide 0 linear;
+    animation: 6s slide infinite linear;
 }
 
 .set1 img{
