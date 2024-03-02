@@ -203,7 +203,7 @@ a:hover{
 #footercontainer{
     background-color: var(--netural-black);
     color: white;
-    padding: 20px;
+    padding: 24px 0;
 }
 .rowsection{
     display: flex;
@@ -224,7 +224,9 @@ a:hover{
     margin: auto;
 }
 .iconsContainer img{
-    height: 32px;
+    height: 28px;
+    margin: 0 16px;
+
 }
 .copyrightsection{
     display: flex;
@@ -245,7 +247,22 @@ a:hover{
         gap: 2rem;
         padding: 2rem;
     }
-    
 }
 
+.email, .homefrom{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
+}
+
+.aboutmepage, .contact{
+    padding: 20px;
+    max-width: 720px;
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
