@@ -27,6 +27,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.sideheadings{
+    font-weight: 100;
+}
 
 /* Tansision to all links and buttons */
 
@@ -183,7 +186,6 @@ a:hover{
 }
 
 /* ProjectSection */
-/* general */
 .work{
     max-width: 720px;
     overflow: hidden;
