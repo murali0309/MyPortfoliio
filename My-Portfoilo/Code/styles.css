@@ -55,15 +55,32 @@ nav{
 
 }
 
+/* text align to the logo image */
+
 .nav_title{
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
+/* logo height */
 .nav_title img{
     height: 1.6rem;
 }
 
+.nav_links{
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    font-size: 1rem;
+}
+
+a{
+    color: var(--netural-black);
+    text-decoration: none;
+    text-decoration-color: var(--netural-brown);
+}
+/* hoverstate for each component */
 .nav_title:hover{
     transition: all 300ms ease;
     gap: 16px;
@@ -74,28 +91,9 @@ nav{
     text-decoration: none;
 }
 
-.nav_links{
-    display: flex;
-    gap: 12px;
-    list-style: none;
-    font-size: 1rem;
-}
-
-
-a{
-    color: var(--netural-black);
-    text-decoration: none;
-    text-decoration-color: var(--netural-brown);
-}
-
 a:hover{
     text-decoration: underline;
     text-underline-offset: 0.5rem;
-}
-
-.side_scroll{
-    height: 150dvh;
-    
 }
 
 /* headersection */
@@ -111,11 +109,18 @@ a:hover{
 
 .emoji{
 
-    animation: waving_hand 2.5s infinite;
+    animation: waving_hand 2.5s infinite;  /* animation name from keyframes */
     transform-origin: 70% 70%;
     display: inline-block;
 }
 
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* animation keyframes */
 @keyframes waving_hand{
     0%{
         transform: rotate(0deg);
@@ -143,22 +148,16 @@ a:hover{
     }
 }
 
-.introduction{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%) ;
+    }
 }
 
-/* currentProjectstyles */
-
-/* .projectholder{
-    width: 100%;
-}
-
-.Projectholder img{
-    width: 100%;
-    object-fit: contain;
-} */
+/* scroll section  */
 
 .scrollcontainer{
     overflow: hidden;
@@ -169,20 +168,12 @@ a:hover{
 }
 .set1{
     display: inline-block;
-    animation: 6s slide infinite linear;
+    animation: 6s slide infinite linear; /* animation name from keyframes */
+
 }
 
 .set1 img{
     height: 300px;
-}
-
-@keyframes slide{
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform:translateX(-100%) ;
-    }
 }
 
 /* ProjectSection */
@@ -200,12 +191,22 @@ a:hover{
 
 /* foottersection */
 
-
-
-#footercontainer{
+#footersection{
     background-color: var(--netural-black);
     color: white;
     padding: 24px 0;
+}
+
+.footercontainer{
+    background-color: var(--netural-black);
+    margin: auto;
+    max-width: 80%;
+
+}
+
+#fixfooter{
+    position: absolute;
+    bottom: 0;
 }
 .rowsection{
     display: flex;
@@ -225,11 +226,13 @@ a:hover{
 .icons{
     margin: auto;
 }
+
 .iconsContainer img{
     height: 28px;
     margin: 0 16px;
 
 }
+
 .copyrightsection{
     display: flex;
     align-items: center;
@@ -261,6 +264,9 @@ a:hover{
 .aboutmepage, .contact{
     padding: 20px;
     max-width: 720px;
+    height: 100dvh;
+    position: relative;
+    margin:auto;
 }
 
 .contactform{
@@ -268,3 +274,4 @@ a:hover{
     flex-direction: column;
     gap: 24px;
 }
+
