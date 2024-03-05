@@ -273,4 +273,5 @@ form button{
     cursor: pointer;
     border: none;
     background-color: var(--primary-green);
+    color: white;
 }
