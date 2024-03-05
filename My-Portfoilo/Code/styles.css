@@ -254,24 +254,23 @@ a:hover{
     }
 }
 
-.email, .homefrom{
+form{
     display: flex;
     flex-direction: column;
-    gap: 16px;
-
 }
 
-.aboutmepage, .contact{
-    padding: 20px;
-    max-width: 720px;
-    height: 100dvh;
-    position: relative;
-    margin:auto;
+form input, form textarea{
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    outline: none;
 }
 
-.contactform{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+form button{
+    padding: 8px 12px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-green);
 }
-
