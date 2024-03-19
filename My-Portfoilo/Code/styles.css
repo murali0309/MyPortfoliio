@@ -189,6 +189,10 @@ a:hover{
     width: 100%;
 }
 
+.samsung{
+background: linear-gradient(black,rgb(67,67,67), black);
+}
+
 /* foottersection */
 
 #footersection{
@@ -243,7 +247,7 @@ a:hover{
     gap: 4px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
     .rowsection{
         display: flex;
         flex-direction: column;
