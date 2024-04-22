@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root{
+    /* colors */
+    --netural-crem : rgb(246, 246, 246);
+    --netural-brown :rgb(217, 202, 179);
+    --netural-black : rgb(33, 33, 33);
+    --primary-green : rgb(109, 152, 134);
+
+    /* spacing */
+    --spacing-primary : 2rem;
+    --spacing-secondary : 1rem;
+
+    /* font */
+    --font-family-primary : 'Poppins', sans-serif;
+
+}
+
+/* General styles*/
+
+html{
+    scroll-behavior: smooth;
+    background-image: radial-gradient(rgb(217, 202, 179) 1px, rgb(246, 246, 246) 0.5px);
+    background-size: 10px 10px;
+}
+
+body{
+    font-family: var(--font-family-primary);
+}
+
+
+/* Tansision to all links and buttons */
+
+a{
+    transition: all 300ms ease;
+}
+
+/* 
+================
+nav section 
+================
+*/
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #3B3B3B;
+}
+
+.nav_title h1 a ,
+.nav_links li a{
+    color: #ffff;
+}
+
+
+.nav_bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-secondary); 
+
+}
+
+/* text align to the logo image */
+.nav_title{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+
+
+/* logo height */
+.nav_title img{
+    height: 1.6rem;
+}
+
+.nav_links{
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    font-size: 1rem;
+}
+
+a{
+    color: var(--netural-black);
+    text-decoration: none;
+    text-decoration-color: var(--netural-brown);
+}
+/* hoverstate for each component */
+.nav_title:hover{
+    transition: all 300ms ease;
+    gap: 16px;
+    text-decoration: none;
+}
+
+.title:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+/* ===========
+headersection 
+==============*/
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-secondary);
+    padding: var(--spacing-primary);
+    margin: 64px 0 var(--spacing-primary) 0 ;
+
+}
+
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    line-height: 2;
+}
+
+.introduction p span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: underline wavy red;
+}
+
+.emoji{
+    animation: waving_hand 2.5s infinite;  /* animation name from keyframes */
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+/* animation keyframes */
+@keyframes waving_hand{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(14deg);
+    }
+    20%{
+        transform: rotate(-8deg);
+    }
+    30%{
+        transform: rotate(14deg);
+    }
+    40%{
+        transform: rotate(-4deg);
+    }
+    500%{
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%) ;
+    }
+}
+
+/* ==============
+current project
+================*/
+.autosidescroll{
+    margin-bottom: 64px
+}
+
+.sideheadings{
+    padding: 8px var(--spacing-secondary);
+    font-weight:400;
+    text-decoration: underline;
+}
+
+
+.scrollcontainer{
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #3B3B3B;
+    
+}
+
+.set1{
+    display: inline-block;
+    animation: 6s slide infinite linear; /* animation name from keyframes */
+
+}
+
+.set1 img{
+    height: 300px;
+}
+
+/* ===============
+ProjectSection 
+==================*/
+.work{
+    max-width: 720px;
+    overflow: hidden;
+    margin: var(--spacing-primary) auto;
+}
+
+.project{
+    padding: 0 var(--spacing-primary);
+    margin-bottom: var(--spacing-primary);
+    text-align: center;
+}
+
+.project p a{
+    color: var(--primary-green);
+}
+.projectimgcontainer img{
+    width: 100%;
+}
+
+.samsung{
+background: linear-gradient(black,rgb(67,67,67), black);
+}
+
+/* ===============
+foottersection
+================== */
+
+#footersection{
+    width: 100%;
+    background-color: #3B3B3B;
+    color: white;
+    padding: var(--spacing-secondary);
+}
+
+.footerinfo{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 var(--spacing-primary);
+}
+
+/* about */
+.footeraboutme div{
+display: flex;
+align-items: center;
+}
+
+.footeraboutme h2 a{
+    color: white;
+}
+.footerimgContainer{
+    width: 48px;
+    display: block;
+}
+
+.footerimgContainer img{
+    width:100%;
+}
+
+.location{
+    font-size: .8rem;
+}
+
+/* icons */
+
+.icons h2{
+    margin-bottom: 1rem;
+}
+.iconsContainer img{
+    height: 2rem;
+    margin: 0 .5rem;
+}
+
+/* contact */
+.contactform, form{
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-secondary);
+}
+
+input, textarea, form button{
+    padding: .25rem 1rem;
+    border-radius:.25rem;
+    border: none;
+    font-family: var(--font-family-primary);
+}
+
+form button{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: white;
+    border: none;
+    background-color: var(--primary-green);
+}
+
+.copyrightsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: .75rem;
+    font-weight: 300;
+    gap: 4px;
+}
+
+@media (max-width: 800px) {
+.footerinfo{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-primary);
+    padding-bottom:var(--spacing-primary) ;
+}
+
+}
+
+
+
+
+
+/* ===========-======
+about page styles=
+=================== */
+
+.aboutmepage, .contact{
+    max-width: 850px;
+    min-height: 100dvh;
+    margin: auto;
+    padding:var(--spacing-primary);
+}
+
+
+/* =====================
+contact
+==========================
+ */
+
+ .contact h1{
+    margin-bottom:1rem ;
+ }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murali</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- navigationbar -->
@@ -16,7 +16,7 @@
             </div>
             <ul class="nav_links">
                 <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Email</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
     </nav>
 
@@ -24,15 +24,14 @@
     <header id="header">
         <h1>Hey! <span class="emoji">👋</span></h1>
         <div class="introduction">
-        <p >My name is Murali</p>
-        <p>a self-taught <img src="./images/Blender_logo_no_text.png" alt="" width="24px"> Blender artist</p>
+        <p >My name is <span>Murali</span>
+            <br>Self-taught <img src="./images/Blender_logo_no_text.png" alt="" width="24px"> Blender artist</p>
         </div>
     </header>
 
 <!-- currentProjectsection -->
-
     <section class="autosidescroll">
-        <h4 class="sideheadings">Current Project</h4>
+        <h4 class="sideheadings">Current Project :</h4>
         <div class="scrollcontainer">
             <div class="set1">
                 <img src="./images/head-sideview-right 2.png" alt="">
@@ -52,92 +51,108 @@
 
     <!-- Projectshowcasesection -->
     <section class="work">
-        <h4 class="sideheadings">My Work</h4>
+        <h4 class="sideheadings">My Work :</h4>
 
         <!-- DONUT -->
         <div class="project">
             <div class="projectimgcontainer">
                 <img src="./images/donut.png" alt="">
             </div>
+            <p><a href="#">Donut</a></p>
         </div>
         <!-- RedBull -->
         <div class="project">
             <div class="projectimgcontainer">
                 <img src="./images/redbullcycles.png" alt="">
             </div>
+            <p><a href="#">RedBull</a></p>
         </div>
         <!-- Samsung watch -->
         <div class="project">
             <div class="projectimgcontainer samsung">
                 <img src="./images/samsungWatchCycles-512.png" alt="">
             </div>
+            <p><a href="#">Galaxy Watch 6</a></p>
         </div>
         <!-- cube -->
         <div class="project">
             <div class="projectimgcontainer">
                 <img src="./images/zoozoo.png" alt="">
             </div>
+            <p><a href="#">Cubes</a></p>
         </div>
         <!-- mouse -->
         <div class="project">
             <div class="projectimgcontainer">
                 <img src="./images/Mousecycles.png" alt="">
             </div>
+            <p><a href="#">Mouse</a></p>
         </div>
         <!-- poly house -->
         <div class="project">
             <div class="projectimgcontainer">
                 <img src="./images/polyhouse_cycles.png" alt="">
             </div>
+            <p><a href="#">Low Poly House</a></p>
         </div>
         <!-- ZooZoo -->
         <div class="project">
             <div class="projectimgcontainer">
                 <img src="./images/zoozoo_CYCLES.png" alt="">
             </div>
+            <p><a href="#">Zoo zoo</a></p>
         </div>
         
     </section>
-
+<!--Footer section-->
     <footer id="footersection">
-        <div class="footercontainer">
-        <div class="rowsection">
-            <div class="footeraboutme">
-                <h4>About me!</h4>
-                <div>
-                    <img src="./images/donut-T.png" alt="" width="38px">
-                    <p>Murali</p>
-                </div>
-                <p class="location">Andhra Pradesh,</p>
-                <p class="location">India</p>
-                <!-- <div> social media</div> -->
-            </div>
+        <section class="footerinfo">
 
-
-                <div class="icons">
-                    <div class="iconsContainer">
-                        <img src="./images/Blender_logo_no_text.png" alt="">
-                        <img src="./images/photoshop 1.png" alt="">
-                        <img src="./images/pureref.jfif" alt="">
+                <div class="footeraboutme">
+                    <h2><a href="./about.html">About me!</a></h2>
+                    <div>
+                        <div class="footerimgContainer">
+                            <img src="./images/donut-T.png" alt="">
+                        </div>
+                        <h3>Murali</h3>
                     </div>
+                    <p class="location">Andhra Pradesh,</p>
+                    <p class="location">India</p>
+                    <!-- <div> social media</div> -->
                 </div>
                 
-            <div class="email">
-                <h4>Feedback</h4>
+                <div class="icons">
+                    <h2>Software</h2>
+                    <div class="iconsContainer">
+                        <a href="https://www.blender.org/" target="_blank"><img src="./images/Blender_logo_no_text.png" alt=""></a>
+                        <a href="https://www.adobe.com/products/photoshop.html" target="_blank"><img src="./images/photoshop 1.png" alt=""></a>
+                        <a href="https://www.pureref.com/" target="_blank"><img src="./images/PureRef.svg" alt=""></a>
+                        
+                    </div>
+                </div>
+            <!-- <div class="menulinks">
+                <ul class="nav_links">
+                    <li><a href="#header">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            </div> -->
+            
+            <div class="contactform">
+                <h2>Feedback</h2>
                 <form action="https://api.web3forms.com/submit" method="POST" class="homefrom">
                     <input type="hidden" name="access_key" value="67821bb4-da9e-46ad-ab6d-1549db58bb66">
                     <input type="text" id="name" placeholder="Your Name">
                     <input type="email" id="email" placeholder="Email">
-                    <textarea name="Meassage" id="message"placeholder="comments" cols="20" rows="4"></textarea>
+                    <textarea name="Meassage" id="message"placeholder="comments" cols="2" rows="4"></textarea>
                     <button>Submit</button>
                 </form>
-                
             </div>
-        </div>
+        </section>
+
         <div class="copyrightsection">
-           <img src="./images/copyright.svg" alt="" width="12px"> copyright 2024 Murali
+           <img src="./images/copyright.svg" alt="" width="12px"> 2024 
         </div>
-    </div>
     </footer>
 </body>
 </html>

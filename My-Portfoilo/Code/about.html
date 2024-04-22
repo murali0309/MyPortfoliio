@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murali</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <nav>
-        <section class="nav_bar">
-            <div class="nav_title">
-                <img src="./images/Donut-left.png" alt="">
-                <h1><a href="./index.html" class="title">Murali</a></h1>
-                <img src="./images/dount-right.png" alt="">
-            </div>
-            <ul class="nav_links">
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Email</a></li>
-            </ul>
-        </section>
-    </nav>
+    <nav class="nav_bar">
+        <div class="nav_title">
+            <img src="./images/Donut-left.png" alt="">
+            <h1><a href="./index.html" class="title">Murali</a></h1>
+            <img src="./images/dount-right.png" alt="">
+        </div>
+        <ul class="nav_links">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+</nav>
 
     <section class="aboutmepage">
         <div class="aboutcontainer">
@@ -40,45 +38,55 @@
         </div>
     </section>
 
-    <footer id="footersection">
-        <div class="footercontainer">
-        <div class="rowsection">
+<!--Footer section-->
+<footer id="footersection">
+    <section class="footerinfo">
+
             <div class="footeraboutme">
-                <h4>About me!</h4>
+                <h2><a href="./about.html">About me!</a></h2>
                 <div>
-                    <img src="./images/donut-T.png" alt="" width="38px">
-                    <p>Murali</p>
+                    <div class="footerimgContainer">
+                        <img src="./images/donut-T.png" alt="">
+                    </div>
+                    <h3>Murali</h3>
                 </div>
                 <p class="location">Andhra Pradesh,</p>
                 <p class="location">India</p>
                 <!-- <div> social media</div> -->
             </div>
-
-
-                <div class="icons">
-                    <div class="iconsContainer">
-                        <img src="./images/Blender_logo_no_text.png" alt="">
-                        <img src="./images/photoshop 1.png" alt="">
-                        <img src="./images/pureref.jfif" alt="">
-                    </div>
+            
+            <div class="icons">
+                <h2>Software</h2>
+                <div class="iconsContainer">
+                    <a href="https://www.blender.org/" target="_blank"><img src="./images/Blender_logo_no_text.png" alt=""></a>
+                    <a href="https://www.adobe.com/products/photoshop.html" target="_blank"><img src="./images/photoshop 1.png" alt=""></a>
+                    <a href="https://www.pureref.com/" target="_blank"><img src="./images/PureRef.svg" alt=""></a>
+                    
                 </div>
-                
-            <div class="email">
-                <h4>Feedback</h4>
-                <form action="https://api.web3forms.com/submit" method="POST" class="homefrom">
-                    <input type="hidden" name="access_key" value="67821bb4-da9e-46ad-ab6d-1549db58bb66">
-                    <input type="text" id="name" placeholder="Your Name">
-                    <input type="email" id="email" placeholder="Email">
-                    <textarea name="Meassage" id="message"placeholder="comments" cols="20" rows="4"></textarea>
-                    <button>Submit</button>
-                </form>
-                
             </div>
+        <!-- <div class="menulinks">
+            <ul class="nav_links">
+                <li><a href="#header">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        </div> -->
+        
+        <div class="contactform">
+            <h2>Feedback</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" class="homefrom">
+                <input type="hidden" name="access_key" value="67821bb4-da9e-46ad-ab6d-1549db58bb66">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Email">
+                <textarea name="Meassage" id="message"placeholder="comments" cols="2" rows="4"></textarea>
+                <button>Submit</button>
+            </form>
         </div>
-        <div class="copyrightsection">
-           <img src="./images/copyright.svg" alt="" width="12px"> copyright 2024 Murali
-        </div>
+    </section>
+
+    <div class="copyrightsection">
+       <img src="./images/copyright.svg" alt="" width="12px"> 2024 
     </div>
-    </footer>
+</footer>
 </body>
 </html>
