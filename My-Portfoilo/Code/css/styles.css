@@ -223,7 +223,7 @@ ProjectSection
 }
 
 .project{
-    padding: 0 var(--spacing-primary);
+    padding: 0 var(--spacing-secondary);
     margin-bottom: var(--spacing-primary);
     text-align: center;
 }
