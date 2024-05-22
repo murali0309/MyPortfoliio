@@ -139,6 +139,35 @@ headersection
     text-decoration: underline wavy red;
 }
 
+.knownbtn{
+    font-size: 1rem;
+}
+
+.knowsection{
+    margin-top:5rem;
+}
+
+.headerlinks{
+    border: 1px solid #3B3B3B;
+    border-radius: 1rem;
+    padding: .5rem 1.5rem
+
+}
+
+.headerlinks:hover{
+    text-decoration: none;
+    border: 2px solid #3B3B3B;
+    
+}
+
+.knowlink{
+    text-decoration: none;
+}
+
+.knowlink:hover{
+    text-decoration: none;
+}
+
 .emoji{
     animation: waving_hand 2.5s infinite;  /* animation name from keyframes */
     transform-origin: 70% 70%;
@@ -349,6 +378,21 @@ about page styles=
 }
 
 
+.portfolioPdf{
+    text-align: center;
+    text-decoration: underline;
+    margin: auto;
+    padding:var(--spacing-primary);
+}
+
+.downloadsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
 /* =====================
 contact
 ==========================
@@ -356,4 +400,11 @@ contact
 
  .contact h1{
     margin-bottom:1rem ;
+ }
+
+ .contactsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
  }
